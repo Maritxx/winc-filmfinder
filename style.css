@@ -124,8 +124,15 @@ h1 {
 /*Filter Buttons Styling*/
 .movie-filters__holder {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
   padding: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .movie-filters__holder {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /*Movie Listing Styling*/
