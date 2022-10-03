@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script defer src="moviedata.js"></script>
+        <script defer src="main.js"></script>
+    </head>
+
+    <body>
+        <header class="fourteenFourty">
+            <h1>Winc Film finder</h1>
+        </header>
+
+        <main>
+            <section class="movie-overview__section fourteenFourty">
+                <div class="movie-filters__holder">
+                    <!--ADD INPUT FOR TYPING-->
+                    <span class="movie-filter__container">
+                        <input type="radio" id="latest-movies" name="movie-filter" value="latest-movies">
+                        <label for="latest-movies">Latest movies, 2014 or newer</label>
+                    </span>
+
+                    <span class="movie-filter__container">
+                        <input type="radio" id="avenger-movies" name="movie-filter" value="avenger-movies">
+                        <label for="avenger-movies">Avenger movies</label>     
+                    </span>
+                    
+                    <span class="movie-filter__container">
+                        <input type="radio" id="xmen-movies" name="movie-filter" value="xmen-movies">
+                        <label for="xmen-movies">X-Men movies</label>
+                    </span>
+
+                    <span class="movie-filter__container">
+                        <input type="radio" id="princess-movies" name="movie-filter" value="princess-movies">
+                        <label for="princess-movies">Princess movies</label>
+                    </span>
+
+                    <span class="movie-filter__container">
+                        <input type="radio" id="batman-movies" name="movie-filter" value="batman-movies">
+                        <label for="batman-movies">Batman movies</label>
+                    </span>
+                </div>
+
+                <div class="movie-listings__holder">
+                    <ul id="movieList">                    
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </body>
+</html>

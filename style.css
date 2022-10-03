@@ -1,0 +1,157 @@
+/*CSS RESET FILE ->
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins
+   and font sizes of headings, and so on.
+*/
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, button, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  word-wrap: break-word;
+  font-size: 100%;
+  overflow: hidden;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+button {
+  outline: 0;
+  color: inherit;
+}
+
+q {
+  display: inline;
+  font-style: italic;
+}
+
+textarea, input[type=text], input[type=button], input[type=submit], input[type=reset], input[type=search], input[type=password] input[type=number], input[type=email] {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  border-radius: 0;
+  border: 2px solid transparent;
+  outline: none;
+  resize: none;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+ol, ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Stylesheet link*/
+/*Global Styling*/
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 30px;
+}
+
+.fourteenFourty {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*Font Styling*/
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/*Filter Buttons Styling*/
+.movie-filters__holder {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+/*Movie Listing Styling*/
+.movie-listings__holder {
+  padding: 30px;
+}
+.movie-listings__holder ul {
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .movie-listings__holder ul {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .movie-listings__holder ul {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+.movie-listings__holder ul img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
