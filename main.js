@@ -87,12 +87,8 @@ const handleOnChangeEvent = function(e) {
             filterMovies("batman");
             break;
 
-        case "custom-filter":
-            console.log("This works");
-            break;
-
         default:
-            console.log("There are no movies that fit this filter");
+            movieList.innerHTML = "No movies fit these criteria";
     };
 };
 

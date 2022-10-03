@@ -1,6 +1,7 @@
 /*Stylesheet link*/
 @use "reset";
 
+
 /*Global Styling*/
 body {
     background-color: black;
@@ -28,7 +29,6 @@ h1 {
 
 
 /*Filter Buttons Styling*/
-//NEEDS TO GO UNDER EACH OTHER ON MOBILE
 .movie-filters__holder {
     display: flex;
     flex-direction: column;
