@@ -1,5 +1,4 @@
 //Function that adds a new LI + A + IMG for every movie in the Database.
-//ASK ELLIS HOW TO MAKE THIS SHORTER BECAUSE THIS DOES NOT SEEM CORRECT.
 const movieList = document.getElementById("movieList");
 
 const addMoviesToDom = function(array) {
@@ -21,7 +20,6 @@ const addMoviesToDom = function(array) {
 
 
 
-
 //Function that adds Event listeners to all buttons and runs the handleOnChangeEvent function when a radio-button is changed.
 const addEventListeners = function() {
     const buttonElements = document.querySelectorAll("input[name='movie-filter']"); 
@@ -40,7 +38,6 @@ const addEventListeners = function() {
 
 
 
-
 //Function that filters movies based on the keyword. 
 const filterMovies = function(wordInMovie) {
     const filteredMovies = movies.filter((movie) => {
@@ -54,7 +51,7 @@ const filterMovies = function(wordInMovie) {
 //Function that filters movies based on the release date.
 const filterLatestMovies = function() {
     const filteredMovies = movies.filter((movie) => {
-        return movie.year <= 2014;
+        return movie.year >= 2014;
     });
 
     addMoviesToDom(filteredMovies);
@@ -62,9 +59,7 @@ const filterLatestMovies = function() {
 
 
 
-
 //Function that calls the filter function based on the radio-button clicked.
-//ASK ELLIS ABOUT THE DEFAULT CASE IN THE SWITCH STATEMENT.
 const handleOnChangeEvent = function(e) {
     switch (e.target.value) {
         case "latest-movies":
@@ -88,10 +83,9 @@ const handleOnChangeEvent = function(e) {
             break;
 
         default:
-            movieList.innerHTML = "No movies fit these criteria";
+            movieList.innerHTML = "<p>No movies fit these criteria</p>";
     };
 };
-
 
 
 
